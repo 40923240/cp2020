@@ -1,15 +1,139 @@
-<h1>首頁</h1>
-<p><strong>使用教材:PC Hardware</strong><em><strong><img alt="" src="/images/index.html" style="float: left;"/></strong></em></p>
-<p><img alt="" height="492" src="/images/333333.jpg" width="486"/></p>
-<p>進度表:</p>
-<p><span style="color: #ff9900;">10/13 PCH11:Fiber-Optic-Cable/光纖電纜</span></p>
-<p><span style="color: #ff9900;">10/14 PCH11:Twisted Pair Cable/雙絞線</span></p>
-<h1>錯誤排除紀錄</h1>
-<p><span style="color: #ff6600;">1.</span><span style="color: #ff6600;">10/13遭遇切換至</span><span style="color: #ff6600;">2階時靜態404的錯誤。</span></p>
-<p><span style="color: #ff6600;">解決辦法:要轉成2階的名稱裡不能有</span><span style="color: #00ff00;">" / :</span><span style="color: #ff6600;">這些符號</span></p>
-<p></p>
-<h1>HomeWork</h1>
-<h2>PCH 11 Fiber-Optic-Cable(光纖電纜)</h2>
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923240的cp2020網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923240的cp2020網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='首頁.html'>首頁</a><li><a href='錯誤排除紀錄.html'>錯誤排除紀錄</a><li class='has-children'><a href='HomeWork.html'>HomeWork</a><ul class='dropdown'><li><a href='PCH 11 Fiber-Optic-Cable(光纖電纜).html'>PCH 11 Fiber-Optic-Cable(光纖電纜)</a><li><a href='PCH 11 Twisted Pair Cable.html'>PCH 11 Twisted Pair Cable</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">HomeWork << <a href='HomeWork.html'>Previous</a> <a href='PCH 11 Twisted Pair Cable.html'>Next</a> >> PCH 11 Twisted Pair Cable<br /><h1>PCH 11 Fiber-Optic-Cable(光纖電纜)</h1>
 <p><span style="color: #ff99cc;">learning objectives/學習目標</span></p>
 <p>Identify types of network cables and connectors.</p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">識別網絡電纜和連接器的類型。</span></pre>
@@ -17,7 +141,7 @@
 <p>In this module, we’re going to discuss the various types of network media. We will begin with fiber-optic cable and then discuss twisted pair cable and coaxial cable. For each of these cable types, we will discuss appearance, characteristics, and types of connectors, as well as speed and limitations.</p>
 <p class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0"><span lang="zh-TW">在本模塊中，我們將會討論到各種類型的網絡媒體。我們將會從光纖電纜開始，然後討論雙絞線電纜和同軸電纜。對於每種電纜的類型，我們將會討論連接器的外觀，特性和類型，以及速度和限制。</span></p>
 <p class="tw-ta-container hide-focus-ring tw-lfl" tabindex="0"><strong><span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">Fiber-Optic-Cable(光纖電纜)</span></span></strong></p>
-<p class="tw-ta-container hide-focus-ring tw-lfl" tabindex="0"><strong><img alt="" height="335" src="/images/image1.png" width="312"/></strong></p>
+<p class="tw-ta-container hide-focus-ring tw-lfl" tabindex="0"><strong><img alt="" height="335" src="./../images/image1.png" width="312"/></strong></p>
 <p class="tw-ta-container hide-focus-ring tw-lfl" tabindex="0"><strong>Fiber-optic cables are constructed by using a glass core at the center of the cable that is surrounded by cladding. In order to send data from one end of the cable to the other, light from a light-emitting diode (LED) or laser is used to transmit the signal down the glass fiber at the center of the cable. Because the data is being transmitted using light, it is immune to the effects of electromagnetic interference (EMI) that impact traditional copper-based cables, such as twisted pair and coaxial cables. Fiber-optic cables possess the ability to send the data a very far distance (many miles) without the use of a repeater. They also can carry a significant amount of data due to their large bandwidth and the information traveling at light speed. Their bandwidth can be measured in gigabits or even terabits per second. There are two types of fiber cables: multimode and single-mode fiber.</strong></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><strong><span lang="zh-TW">光纖電纜是通過在電纜的中心使用玻璃芯製成的，該玻璃芯被層層圍繞。<br/>為了將數據從電纜的一端發送到另一端，使用來自發光二極管（LED）或是使使用雷射的光線沿電纜中心的玻璃纖維向下傳輸信號。<br/>由於數據是通過光傳輸的，因此不受電磁干擾（EMI）的影響，這些電磁干擾會影響傳統的銅基電纜，如雙絞線和同軸電纜。<br/><span style="color: #ff0000;">光纖有無需使用中繼器就可傳輸到很遠的距離（許多英里）發送數據的能力</span>。由於它們的大帶寬和以光速傳播的信息，此外它們還可以攜帶大量數據。<br/>它們的帶寬可以<span style="color: #ff0000;">以每秒1GB甚至是1TB的速度來測量</span>。而光纖電纜有兩種類型：<span style="color: #ff0000;">多模光纖與單模光纖</span>。<br/><br/><span style="color: #ff99cc;">(多模光纜):</span><br/>Multimode fiber cables (MMF) contain a larger core than the single-mode variety. The core size for <br/>a multimode fiber is 62.5 microns. A micron is a very small unit of measurement—it is actually even<br/>smaller than the width of a human hair. MMF’s larger core enables multiple modes of travel for the light<br/>from one end of the cable to the other. This allows a single fiber to carry multiple signals across it, with<br/>each signal being transmitted at a slightly different reflective angle. When the light reaches the destination, <br/>the signals are then converted back into 1s and 0s and passed to the computer by the network interface card.<br/>Multimode fiber is commonly used in shorter distance fiber connections, such as from a router to a switch, a <br/>switch to a switch, or a server to a switch<br/><br/></span><span lang="zh-TW">多模光纜（MMF）的芯線比單模光纜大。多模光纖的纖芯尺寸為62.5微米。微米是非常小的測量單位，實際上甚至比人類頭髮的寬度還小。<br/>MMF的較大的芯線實現了從電纜一端到另一端的多種傳播模式。這樣一來，單根光纖就可以在其上傳輸多個信號，而每個信號的反射角度都會稍有不同。<br/>當光到達目的地時，信號會被轉換回1和0，然後通過網絡接口卡傳遞到電腦中。<br/><span style="color: #ff0000;">多模光纖通常用於較短距離的光纖連接中</span>，例如從路由器到交換機，從交換器到交換器或從服務器到交換器。<br/><span style="color: #ff99cc;"><br/>(單模光纜):</span><br/>Single-mode fiber cables (SMF) contain a much smaller core than the multimode variety. The core size for SMF <br/>is 10 microns. SMF’s smaller core only allows for a single mode of travel for the light from one end of the <br/>cable to the other. This straight-through connection allows for data to travel longer distances without a repeater<br/>than it can travel using MMF. When the light reaches the destination, the signals are then converted back into 1s <br/>and 0s and passed to the computer by the network interface card. Single mode fiber is commonly used in very long distance <br/>fiber connections, such as a backbone connection from one local area network to another.<br/><br/></span></strong></pre>
 <p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><strong><span lang="zh-TW">單模光纜（SMF）的芯線比多模光纜小得多。SMF的芯尺寸為10微米。SMF的較小芯線僅允許光從電纜一端到另一端的單一傳播模式。<br/>這種直通連接允許數據在沒有中繼器的情況下傳輸更長的距離，而無法使用MMF進行傳輸。當光到達目的地時，</span><span lang="zh-TW">然後</span><span lang="zh-TW">信號被轉換回1和0，<br/>然後通過網絡接口卡傳遞到電腦。單模光纖通常用於超長距離的光纖連接中，例如從一個局域網到另一個局域網的骨干連接。<br/><br/></span><span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">Fiber-Optic Cable Connectors(光纖電纜連接器)</span></span></strong></p>
@@ -33,25 +157,54 @@
 <p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><strong><span lang="zh-TW"> </span></strong></p>
 </div>
 </div>
-</div><h2>PCH 11 Twisted Pair Cable</h2>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span> </span></span></pre>
-<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
-</div>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span> </span></span></pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
-<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span> </span></pre>
-</div>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
-<p></p>
+</div><br />HomeWork << <a href='HomeWork.html'>Previous</a> <a href='PCH 11 Twisted Pair Cable.html'>Next</a> >> PCH 11 Twisted Pair Cable</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
