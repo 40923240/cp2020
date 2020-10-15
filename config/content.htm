@@ -1,5 +1,5 @@
 <h1>首頁</h1>
-<p><strong>使用教材:PC Hardware</strong><em><strong><img alt="" src="/images/index.html" style="float: left;"/></strong></em></p>
+<p style="padding-left: 30px;"><span style="color: #ff99cc;"><strong>使用教材:PC Hardware</strong></span><em><strong><img alt="" src="/images/index.html" style="float: left;"/></strong></em></p>
 <p><img alt="" height="492" src="/images/333333.jpg" width="486"/></p>
 <p>進度表:</p>
 <p><span style="color: #ff9900;">10/13 PCH11:Fiber-Optic-Cable/光纖電纜</span></p>
@@ -7,6 +7,9 @@
 <h1>錯誤排除紀錄</h1>
 <p><span style="color: #ff6600;">1.</span><span style="color: #ff6600;">10/13遭遇切換至</span><span style="color: #ff6600;">2階時靜態404的錯誤。</span></p>
 <p><span style="color: #ff6600;">解決辦法:要轉成2階的名稱裡不能有</span><span style="color: #00ff00;">" / :</span><span style="color: #ff6600;">這些符號</span></p>
+<p><span style="color: #ff6600;">2.10/15遭遇進入9443出現error。</span></p>
+<p><span color="#ff6600" style="color: #ff6600;">解決辦法:將c:與y:的cp2020刪除後,</span><span color="#ff6600" style="color: #ff6600;">用<span>git clone --recurse-submodules URL.git的指令重抓進隨身碟後</span></span></p>
+<p><span color="#ff6600" style="color: #ff6600;">,重開啟9443就可以了,網站上的紀錄跟出事前會是一樣的。</span></p>
 <p></p>
 <h1>HomeWork</h1>
 <h2>PCH 11 Fiber-Optic-Cable(光纖電纜)</h2>
@@ -48,8 +51,34 @@
 <p lang=""><span style="color: #ff0000;">屏蔽雙絞線電纜的構造與非屏蔽雙絞線非常相似</span>，但不同的是，成對的電線也被金屬屏蔽層（如金屬箔）圍繞。<span style="color: #ff0000;">外部的金屬箔屏蔽層可最大程度地減少電纜所遭受的電磁干擾</span>。這增加了電纜的安全性和可靠性。但是，不幸的是，<span style="color: #ff0000;">這也增加了電纜的成本，因此通常僅在高生產環境中使用</span>，在這種情況下，額外的安全性值得額外的成本。</p>
 <p id="N1069F" lang="">The more common type of cabling is unshielded twisted pair cable. Instead of using extra shielding, this cable relies on the twisting of its copper pairs to minimize the effects of EMI. Each twisted pair is twisted to insulate itself from the other pairs, and because there is no additional shielding, it is available at a lower cost than STP. Therefore, UTP is the most common media of choice for small office, home office, residential, and many commercial networks.</p>
 <p lang=""><span style="color: #ff0000;">電纜中最常見的類型是非屏蔽雙絞線電纜</span>。該電纜不使用額外的屏蔽，而是<span style="color: #ff0000;">依靠其銅線對的絞合來最大程度地減小電磁干擾的影響</span>。每個雙絞線都經過絞合，以使其自身與其他雙絞線絕緣，並且由於沒有額外的屏蔽，因此<span style="color: #ff0000;">可以以比屏蔽雙絞線電纜更低的成本獲得</span>。因此，非<span>屏蔽雙絞線電纜</span>是小型辦公室，家庭辦公室，住宅和許多商業網絡中最常見的選擇媒介。</p>
-<p lang=""><span style="color: #ff99cc;">Unsheathed twisted pair cable/非屏蔽雙絞電纜</span></p>
+<p lang=""><span style="color: #ff99cc;">Unsheathed twisted pair cable(非屏蔽雙絞電纜)</span></p>
 <div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"><img alt="" height="570" src="/images/image7.png" width="418"/></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl"></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl">
+<p><span style="color: #ff99cc;"><strong><span title="Quick scroll up">Categorizing Twisted Pair Cable(</span>分類雙絞線電纜)</strong></span></p>
+<p>Twisted pair cable is categorized based on a category (cat) number. For example, cat 3, or category 3, is the oldest type of cable that we use. It was introduced back in the 1980s and 1990s for use in the first star topologies. The maximum throughput or bandwidth of cat 3 cabling is only 10 Mbps (megabits per second). The cat 3, like all twisted pair cabling, cannot go farther than 100 meters without using a repeater, switch, or active hub to amplify the signal. This limited distance is attributable to the copper wiring in these cables. As the signal travels over the copper wire, the natural resistance to the wire decreases the signal’s strength, and it eventually becomes too weak for the distant end to receive. For this reason, there is a 100 meter limitation when building and designing a twisted pair network.</p>
+<p>雙絞線電纜根據類別編號進行分類。例如,<span>3<span style="color: #ff0000;">類電纜</span></span><span style="color: #ff0000;">（或類別3）是我們使用的最古老的電纜類型</span>。它是在1980年代和1990年代引入的，用於第一批<span>星型網。<span style="color: #ff0000;">3類</span></span><span style="color: #ff0000;">電纜的最大傳輸量或帶寬僅為10 Mbps（兆位/秒）</span>。與所有雙絞線電纜一樣，如果不使用中繼器，交換機或有源集線器來放大信號，則<span>3類電纜</span>不能走超過100米。這種有限的距離歸因於這些電纜中的銅線。當信號在銅線上傳輸時，導線的電阻會降低信號的強度，最終變得太弱，無法接收到遠端。因此，在構建和設計<span style="color: #ff0000;">雙絞線網絡時存在100米的長度限制</span>。</p>
+<p><span style="color: #ff99cc;">Cat 5(5類雙膠線電纜)</span></p>
+<p><span>Cat 5 cables were an improvement on the older cat 3 cables and contain more twists, giving them more shielding from EMI and a maximum bandwidth of 100 Mbps. Cat 5e, or cat 5 enhanced, increased the speed of the maximum throughput to one Gbps, or 1000 Mbps, and became a gap filler until cat 6 cabling became commonplace.</span></p>
+<p><span style="color: #ff0000;">5類雙膠線電纜是對較舊的<span>3</span><span style="color: #ff0000;">類</span></span><span style="color: #ff0000;">電纜的改進</span>，並包含更多的絞合線，從而使它們具有更大的<span>電磁干擾</span>屏蔽能力，最大帶寬為100 Mbps。 Cat 5e或5<span>類雙絞線電纜</span>增強後，將最大吞吐量的速度提高到1 Gbps或1000 Mbps，並成為了過度品，直到<span>6類雙絞線</span>電纜變得司空見慣。</p>
+<p><span>Cat 6a overcomes the 37-55 meter limitation of cat 6 when used in 10GBaseT. Cat 7, the newest standard, is shielded and provides connections up to 10 Gbps with a maximum distance of 100 meters. “Cat 7 and cat 7a cabling will be used for backbone connections between servers within a data center” and “provide an alternative to using fiber-optic cabling within the data center”</span></p>
+<p>當在10Gb乙太網路中使用時，<span>超六類雙膠線電纜</span>克服了6<span>類雙膠線電纜</span>的37-55米的限制。<span style="color: #ff0000;">最新標準7類雙膠線電纜被屏蔽，並提供高達10 Gbps的連接，最大距離為100米</span>。<span>7類</span><span>雙膠線電纜</span>和<span>超7類</span><span>雙膠線</span>電纜將用於數據中心內服務器之間的骨干連接，並提供在數據中心內使用光纖電纜的替代方案。</p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">All cable categories up to cat 5e and cat 6a have a maximum distance of 100 meters. When used in 10GBaseT, the maximum distance for cat 6 is 55 meters. Cat 7 is shielded and exceeds the 100 meter limit. As the category of the cable increases, so do the number of twists per inch and the frequency range, allowing for more data and improved protection against EMI. Best practice for copper cabling is not to run cable lengths to the maximum because attenuation will reduce data capacity.</div>
+<div class="tw-ta-container hide-focus-ring tw-nfl"></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">直至Cat 5e和Cat 6a為止的所有電纜類別的最大距離為100米。在10GBaseT中使用時，<span>Cat 6</span>的最大距離為55米。 Cat 7被屏蔽並超過100米的限制。隨著電纜類別的增加，每英寸的捻數和頻率範圍也會增加，從而可以提供更多的數據並改善對電磁脈衝的保護。銅纜佈線的最佳實踐是不要使電纜長度變大，因為會衰減降低數據的容量。</div>
+<div class="tw-ta-container hide-focus-ring tw-nfl"></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl">
+<p><span style="color: #ff99cc;"><span title="Quick scroll up"></span></span></p>
+<p><span style="color: #ff99cc;"><span title="Quick scroll up">Twisted Pair Connectors(</span>雙絞線連接器)</span></p>
+<p>Twisted pair cables come with three main types of connectors. The first is the RJ-45 connector, which is an eight-pin connector used in Ethernet networks. Even though most Ethernet networks use only four pins, the RJ-45 provides eight pins for future use and capabilities. The first four pins are used to transmit (two pins) and receive (two pins).</p>
+<p>雙絞線電纜帶有三種主要類型的連接器。第一個是RJ-45連接器，它是以太網網絡中使用的八針連接器。即使大多數以太網僅使用四個引腳，RJ-45仍提供八個引腳以供將來使用。前四個引腳用於發送（兩個引腳）和接收（兩個引腳）。</p>
+</div>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+</div>
+<p><span style="color: #ff99cc;"><strong></strong></span></p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+</div>
 <div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
 </div>
