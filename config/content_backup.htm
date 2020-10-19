@@ -2,8 +2,10 @@
 <p style="padding-left: 30px;"><span style="color: #ff99cc;"><strong>使用教材:PC Hardware</strong></span><em><strong><img alt="" src="/images/index.html" style="float: left;"/></strong></em></p>
 <p><img alt="" height="492" src="/images/333333.jpg" width="486"/></p>
 <p>進度表:</p>
-<p><span style="color: #ff9900;">10/13 PCH11:Fiber-Optic-Cable/光纖電纜</span></p>
-<p><span style="color: #ff9900;">10/14 PCH11:Twisted Pair Cable/雙絞線</span></p>
+<p><span style="color: #ff9900;">10/13 PCH11:Fiber-Optic-Cable/光纖電纜(75%)</span></p>
+<p><span style="color: #ff9900;">10/14 <span>PCH11:Fiber-Optic-Cable/光纖電纜(100%)</span></span></p>
+<p><span style="color: #ff9900;">10/19 PCH11:Twisted Pair Cable/雙絞線(100%)</span></p>
+<p><span style="color: #ff9900;">10/19 PCH11:Coaxial Cable/同軸電纜(100%)</span></p>
 <h1>錯誤排除紀錄</h1>
 <p><span style="color: #000000;"><em><strong>1.</strong></em></span><span style="color: #ff6600;">10/13:遭遇切換至</span><span style="color: #ff6600;">2階時靜態404的錯誤。</span></p>
 <p><span style="color: #ff6600;">解決辦法:要轉成2階的名稱裡不能有</span><span style="color: #000000;"><strong>" / :</strong></span><span style="color: #ff6600;">這些符號</span></p>
@@ -11,8 +13,10 @@
 <p><span color="#ff6600" style="color: #ff6600;">解決辦法:將c:與y:的cp2020刪除後,</span><span color="#ff6600" style="color: #ff6600;">用<span>git clone --recurse-submodules URL.git的指令重抓進隨身碟後,</span></span><span color="#ff6600" style="color: #ff6600;">重開啟9443就可以了,網站上的紀錄跟出事前會是一樣的。</span></p>
 <p><span color="#ff6600" style="color: #ff6600;"><span style="color: #000000;"><em><strong>3.</strong></em></span>10/16:遭遇用隨身碟C:與y:做完後有save+轉靜態，但是在git pull卡住了,隨後雖然push</span><span color="#ff6600" style="color: #ff6600;">上去，但是遠端跟近端無法同步。</span></p>
 <p><span color="#ff6600" style="color: #ff6600;"><span>解決辦法:將y:的cp2020刪除後,<span color="#ff6600" style="color: #ff6600;">用<span>git clone --recurse-submodules URL.git的指令重抓進隨身碟然後就ok了, </span></span></span></span><span color="#ff6600" style="color: #ff6600;">by a.m.2:27</span></p>
-<p></p><h1>HomeWork</h1>
-<h2>PCH 11 Fiber-Optic-Cable(光纖電纜)</h2>
+<p></p>
+<h1>HomeWork--</h1>
+<h2>PCH 11</h2>
+<h3>PCH 11 Fiber-Optic-Cable(光纖電纜)</h3>
 <p><span style="color: #ff99cc;">learning objectives/學習目標</span></p>
 <p>Identify types of network cables and connectors.</p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">識別網絡電纜和連接器的類型。</span></pre>
@@ -32,7 +36,7 @@
 <p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span style="color: #ff99cc;">朗訊連接器（LC）</span>是光纖SC連接器的微型版本。它看上去有點像SC，但尺寸只有一半，只有1.25毫米而不是2.5毫米的芯,因此在小區域（例如使用24端口交換機的前面板）連接多個設備時非常有用。<br/><br/>The mechanical transfer-registered jack (MT-RJ) connector is a fiber-optic cable connector that is very popular for small-form-factor<br/>devices due to its small size. This connector houses two fibers and mates with locating pins on the plug. These connectors are commonly <br/>found connecting a switch to a patch panel, because both devices have a limited area on their front panels.<br/></span><span lang="zh-TW"></span></p>
 <p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"></span></p>
 <p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span style="color: #ff99cc;">機械傳輸註冊插孔（MT-RJ）連接器</span>是一種光纖電纜連接器，由於其尺寸小，在小型設備中非常受歡迎。</span><span lang="zh-TW">該連接器容納兩根光纖，並與插頭上的定位銷配對。</span><span lang="zh-TW">通常這些連接器會將開關連接到配線架，因為兩個設備的前面板都有有限的區域。</span></p>
-<h2>PCH 11 Twisted Pair Cable(雙絞線電纜)</h2>
+<h3>PCH 11 Twisted-Pair-Cable(雙絞線電纜)</h3>
 <p><span style="color: #ff99cc;">learning objectives/學習目標</span></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span></span>1.</span>Identify types of network cables and connectors.</pre>
 <div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
@@ -74,33 +78,53 @@
 <p>雙絞線電纜帶有三種主要類型的連接器。第一個是RJ-45連接器，它是以太網網絡中使用的八針連接器。即使大多數以太網僅使用四個引腳，RJ-45仍提供八個引腳以供將來使用。前四個引腳用於發送（兩個引腳）和接收（兩個引腳）。</p>
 </div>
 <div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"><span>The RJ-11 connector is used in the standard telephone system. The RJ-11 is a six-pin connector, but commonly only two pins are used for a telephone (transmit and receive). If you have a two-line phone, then four pins are used: two pins to transmit and two pins to receive.</span></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl"></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl">RJ-11連接器用於標準電話系統。 RJ-11是一個六針連接器，但電話通常僅使用兩個針腳（用於發送和接收）。如果您有兩線電話，則會使用四個引腳：兩個引腳用於發送，兩個引腳用於接收。
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl" style="text-align: left;">
+<p lang="">Finally, the DB-9 connector is used for RS-232 signals. This connector looks like a standard serial connector. It is used commonly for asynchronous serial communications, like connecting to an external modem. In modern networks, you will see this type of connector on a “rollover cable.” A rollover cable has a DB-9 on one side (which is connected to your laptop’s serial port), and an RJ-45 connector on the other side (which is used to connect to Cisco routers and switches to do administration tasks).</p>
+<p lang="">最後，DB-9連接器用於RS-232信號。該連接器看起來像標準的串行連接器。它通常用於異步串行通信，例如連接到外部調製解調器。在現代網絡中，您將在“翻轉電纜”上看到這種類型的連接器。翻轉電纜的一側為DB-9（連接到筆記本電腦的串行端口），另一側為RJ-45連接器（用於連接到Cisco路由器和交換機以執行管理任務）。</p>
+<p id="N1073E" lang="">A straight-through cable is a type of twisted pair cable that is used in local area networks to connect a computer to a network hub, such as a router. This type of cable is also sometimes called a patch cable. Both ends of the cable have an identical pinout, hence the name “straight-through.” A crossover cable switches the pinouts of the two ends of the cable, making the transmit and receive pins alternate on the two ends. This allows two workstations to connect directly to each other without the need for a hub, switch, or router.</p>
+<p lang="">直通電纜是雙絞線電纜的一種，在局域網中用於將計算機連接到網絡集線器（例如路由器）。這種類型的電纜有時也稱為跳線。電纜的兩端都具有相同的引出線，因此被稱為“直通”。交叉電纜切換電纜兩端的引腳分配，使發送和接收引腳在兩端交替。這允許兩個工作站直接相互連接，而無需集線器 、交換機或路由器。</p>
+<p lang=""></p>
+<h3 style="text-align: left;"><strong>PCH 11 Coaxial-Cable(同軸電纜)</strong></h3>
+<p style="text-align: left;"><span style="color: #ff99cc;"><strong>learning objectives/學習目標</strong></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">識別網絡電纜和連接器的類型。<br/></span></pre>
+<p id="N10690" lang="" style="text-align: left;">Coaxial cable is a much older media technology. Coaxial cable, also known as coax for short, is composed of two conductors. The inner conductor, which is known as the insulated conductor (center wire), is the copper wire over which data is passed. The outer conductor is the braided metal shield and aids in protecting the inner wire from physical injury and the effects of EMI. Much like the shielding we saw in shielded twisted pair, the outer shield helps keep electromagnetic interference out of the data’s path. Between the inner conductor and the outer shield, we find an insulated core that prevents any data transfer between the inner core and outer shield. The outside of the cable is made of a flexible plastic jacket, much like the twisted pair cabling. Coaxial cabling was included in the first Ethernet standard as 10Base5 (thicknet) and continued to be used throughout updates as 10Base2 (thinnet) as well as being most commonly used in bus and ring networks. UTP cabling however, is easier to work with in a star topology and is significantly less expensive.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><br/><br/></span></pre>
+<p style="text-align: left;"><span style="color: #ff99cc;"><strong></strong></span></p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;">
 <div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
 </div>
-<p><span style="color: #ff99cc;"><strong></strong></span></p>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
-</div>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<p style="text-align: left;"><span style="color: #ff99cc;"><strong></strong></span></p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
-</div>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
-</div>
-<div class="contentContain"></div>
-</div>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
+<div class="contentContain" style="text-align: left;"></div>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span> </span></span></pre>
-<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" style="text-align: left;" tabindex="0">
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
 </div>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span> </span></span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
-<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" style="text-align: left;" tabindex="0">
 <div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span> </span></pre>
 </div>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
-<p></p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
+<p style="text-align: left;"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
