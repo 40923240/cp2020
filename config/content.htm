@@ -8,12 +8,14 @@
 <p><span style="color: #ff9900;">10/19 PCH11:Coaxial Cable/同軸電纜(80%)</span></p>
 <p><span style="color: #ff9900;">10/20 PCH11:Coaxial Cable/同軸電纜(100%)</span></p>
 <p><span style="color: #ff9900;">10/21 PCH11:Copper vs. Fiber/銅vs.光纖(100%)</span></p>
+<p><span style="color: #ff9900;"><span>10/23 PCH11:Converters/</span><span lang="zh-TW">轉換器(50%)</span></span></p>
 <div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"></pre>
 </div>
 <div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"></pre>
-</div><h1>錯誤排除紀錄</h1>
+</div>
+<h1>錯誤排除紀錄</h1>
 <p><span style="color: #000000;"><em><strong>1.</strong></em></span><span style="color: #ff6600;">10/13:遭遇切換至</span><span style="color: #ff6600;">2階時靜態404的錯誤。</span></p>
 <p><span style="color: #ff6600;">解決辦法:要轉成2階的名稱裡不能有</span><span style="color: #000000;"><strong>" / :</strong></span><span style="color: #ff6600;">這些符號</span></p>
 <p><span style="color: #ff6600;"><span style="color: #000000;"><em><strong>2.</strong></em></span>10/15:遭遇進入9443出現error。</span></p>
@@ -22,7 +24,8 @@
 <p><span color="#ff6600" style="color: #ff6600;"><span>解決辦法:將y:的cp2020刪除後,<span color="#ff6600" style="color: #ff6600;">用<span>git clone --recurse-submodules URL.git的指令重抓進隨身碟然後就ok了, </span></span></span></span><span color="#ff6600" style="color: #ff6600;">by a.m.2:27</span></p>
 <p><strong>4.</strong><span style="color: #ff6600;">10/19:遭遇9443上save，隨後變成404 not found。</span></p>
 <p><span color="#ff6600" style="color: #ff6600;">解決方法:edit add 的&lt;&gt;全選複製後，去y:&gt;tmp&gt;cp2020&gt;config裡的content.htm</span></p>
-<p><span color="#ff6600" style="color: #ff6600;">貼上覆蓋(這裡使用白窗做)，然後按sav,然後重上9443重新整理就好了。</span></p><h1>HomeWork--</h1>
+<p><span color="#ff6600" style="color: #ff6600;">貼上覆蓋(這裡使用白窗做)，然後按sav,然後重上9443重新整理就好了。</span></p>
+<h1>HomeWork--</h1>
 <h2>PCH 11</h2>
 <h3>PCH 11 Fiber-Optic-Cable(光纖電纜)</h3>
 <p><span style="color: #ff99cc;">learning objectives/學習目標</span></p>
@@ -54,9 +57,8 @@
 </div>
 <div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: center;"><span style="color: #ff99cc;">START</span></div>
 <div class="tw-ta-container hide-focus-ring tw-nfl"><span>While fiber-optic cable is great for its speed, distance, and security, it hasn’t yet become commonplace in most networks. Instead, we are still using the same type of cabling we have been using for the past two to three decades — twisted pair. Twisted pair cable is the most popular physical LAN media in the world today. Each cable contains four pairs of individually insulated strands of copper wire. Each pair is twisted together to minimize the amount of electromagnetic interference (EMI). The more twists there are in the cable, the less EMI there will be. Twisted pair cable is broken up into two types: unshielded twisted pair (UTP) and shielded twisted pair (STP).</span></div>
-<div class="tw-ta-container hide-focus-ring tw-nfl"><span></span></div>
-<div class="tw-ta-container hide-focus-ring tw-nfl">
-<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<div class="tw-ta-container hide-focus-ring tw-nfl"></div>
+</div>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">儘管光纜在速度、距離和安全性方面都非常出色，但在大多數網絡中還尚未普及。<br/>相反的，我們仍在使用過去兩到三十年來一直使用的相同類型的電纜-雙絞線電纜。<br/>雙絞線電纜是當今世界上最流行的<span>物理媒介</span>。每條電纜包含四對獨立絕緣的銅線。<br/>每對絞合在一起以最大程度地減少電磁干擾（EMI）。<span style="color: #ff0000;">電纜中的扭曲越多，EMI越小。</span><br/><span style="color: #ff0000;">雙絞線分為兩種類型：非屏蔽雙絞線（UTP）和屏蔽雙絞線（STP）</span>。<br/><br/></span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span style="color: #ff99cc;"><strong><span lang="zh-TW">光纖連接器</span></strong></span><span lang="zh-TW"><br/><img alt="" height="416" src="/images/image6.png" width="350"/><br/><br/></span></pre>
 <p id="N1069C" lang="">Shielded twisted pair cable is built very similarly to unshielded twisted pair, except that the pairs of wires are also surrounded by a metallic shielding (like foil). This outer foil shielding minimizes the EMI to which the cable is exposed. This increases the security and reliability of the cable. Unfortunately, however, this also increases the cost of the cable, so it is typically used only in high-production environments where the extra security is worth the extra cost.</p>
@@ -64,8 +66,8 @@
 <p id="N1069F" lang="">The more common type of cabling is unshielded twisted pair cable. Instead of using extra shielding, this cable relies on the twisting of its copper pairs to minimize the effects of EMI. Each twisted pair is twisted to insulate itself from the other pairs, and because there is no additional shielding, it is available at a lower cost than STP. Therefore, UTP is the most common media of choice for small office, home office, residential, and many commercial networks.</p>
 <p lang=""><span style="color: #ff0000;">電纜中最常見的類型是非屏蔽雙絞線電纜</span>。該電纜不使用額外的屏蔽，而是<span style="color: #ff0000;">依靠其銅線對的絞合來最大程度地減小電磁干擾的影響</span>。每個雙絞線都經過絞合，以使其自身與其他雙絞線絕緣，並且由於沒有額外的屏蔽，因此<span style="color: #ff0000;">可以以比屏蔽雙絞線電纜更低的成本獲得</span>。因此，非<span>屏蔽雙絞線電纜</span>是小型辦公室，家庭辦公室，住宅和許多商業網絡中最常見的選擇媒介。</p>
 <p lang=""><span style="color: #ff99cc;">Unsheathed twisted pair cable(非屏蔽雙絞電纜)</span></p>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"><img alt="" height="570" src="/images/image7.png" width="418"/></div>
-<div class="tw-ta-container hide-focus-ring tw-nfl"></div>
+<p><img alt="" height="570" src="/images/image7.png" width="418"/></p>
+<p></p>
 <p><span style="color: #ff99cc;"><strong><span title="Quick scroll up">Categorizing Twisted Pair Cable(</span>分類雙絞線電纜)</strong></span></p>
 <p>Twisted pair cable is categorized based on a category (cat) number. For example, cat 3, or category 3, is the oldest type of cable that we use. It was introduced back in the 1980s and 1990s for use in the first star topologies. The maximum throughput or bandwidth of cat 3 cabling is only 10 Mbps (megabits per second). The cat 3, like all twisted pair cabling, cannot go farther than 100 meters without using a repeater, switch, or active hub to amplify the signal. This limited distance is attributable to the copper wiring in these cables. As the signal travels over the copper wire, the natural resistance to the wire decreases the signal’s strength, and it eventually becomes too weak for the distant end to receive. For this reason, there is a 100 meter limitation when building and designing a twisted pair network.</p>
 <p>雙絞線電纜根據類別編號進行分類。例如,<span>3<span style="color: #ff0000;">類電纜</span></span><span style="color: #ff0000;">（或類別3）是我們使用的最古老的電纜類型</span>。它是在1980年代和1990年代引入的，用於第一批<span>星型網。<span style="color: #ff0000;">3類</span></span><span style="color: #ff0000;">電纜的最大傳輸量或帶寬僅為10 Mbps（兆位/秒）</span>。與所有雙絞線電纜一樣，如果不使用中繼器，交換機或有源集線器來放大信號，則<span>3類電纜</span>不能走超過100米。這種有限的距離歸因於這些電纜中的銅線。當信號在銅線上傳輸時，導線的電阻會降低信號的強度，最終變得太弱，無法接收到遠端。因此，在構建和設計<span style="color: #ff0000;">雙絞線網絡時存在100米的長度限制</span>。</p>
@@ -74,20 +76,18 @@
 <p><span style="color: #ff0000;">5類雙膠線電纜是對較舊的<span>3</span><span style="color: #ff0000;">類</span></span><span style="color: #ff0000;">電纜的改進</span>，並包含更多的絞合線，從而使它們具有更大的<span>電磁干擾</span>屏蔽能力，最大帶寬為100 Mbps。 Cat 5e或5<span>類雙絞線電纜</span>增強後，將最大吞吐量的速度提高到1 Gbps或1000 Mbps，並成為了過度品，直到<span>6類雙絞線</span>電纜變得司空見慣。</p>
 <p><span>Cat 6a overcomes the 37-55 meter limitation of cat 6 when used in 10GBaseT. Cat 7, the newest standard, is shielded and provides connections up to 10 Gbps with a maximum distance of 100 meters. “Cat 7 and cat 7a cabling will be used for backbone connections between servers within a data center” and “provide an alternative to using fiber-optic cabling within the data center”</span></p>
 <p>當在10Gb乙太網路中使用時，<span>超六類雙膠線電纜</span>克服了6<span>類雙膠線電纜</span>的37-55米的限制。<span style="color: #ff0000;">最新標準7類雙膠線電纜被屏蔽，並提供高達10 Gbps的連接，最大距離為100米</span>。<span>7類</span><span>雙膠線電纜</span>和<span>超7類</span><span>雙膠線</span>電纜將用於數據中心內服務器之間的骨干連接，並提供在數據中心內使用光纖電纜的替代方案。</p>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">All cable categories up to cat 5e and cat 6a have a maximum distance of 100 meters. When used in 10GBaseT, the maximum distance for cat 6 is 55 meters. Cat 7 is shielded and exceeds the 100 meter limit. As the category of the cable increases, so do the number of twists per inch and the frequency range, allowing for more data and improved protection against EMI. Best practice for copper cabling is not to run cable lengths to the maximum because attenuation will reduce data capacity.</div>
-<div class="tw-ta-container hide-focus-ring tw-nfl"></div>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">直至Cat 5e和Cat 6a為止的所有電纜類別的最大距離為100米。在10GBaseT中使用時，<span>Cat 6</span>的最大距離為55米。 Cat 7被屏蔽並超過100米的限制。隨著電纜類別的增加，每英寸的捻數和頻率範圍也會增加，從而可以提供更多的數據並改善對電磁脈衝的保護。銅纜佈線的最佳實踐是不要使電纜長度變大，因為會衰減降低數據的容量。</div>
-<div class="tw-ta-container hide-focus-ring tw-nfl"></div>
-<div class="tw-ta-container hide-focus-ring tw-nfl">
-<p><span style="color: #ff99cc;"><span title="Quick scroll up"></span></span></p>
+<p>All cable categories up to cat 5e and cat 6a have a maximum distance of 100 meters. When used in 10GBaseT, the maximum distance for cat 6 is 55 meters. Cat 7 is shielded and exceeds the 100 meter limit. As the category of the cable increases, so do the number of twists per inch and the frequency range, allowing for more data and improved protection against EMI. Best practice for copper cabling is not to run cable lengths to the maximum because attenuation will reduce data capacity.</p>
+<p></p>
+<p>直至Cat 5e和Cat 6a為止的所有電纜類別的最大距離為100米。在10GBaseT中使用時，<span>Cat 6</span>的最大距離為55米。 Cat 7被屏蔽並超過100米的限制。隨著電纜類別的增加，每英寸的捻數和頻率範圍也會增加，從而可以提供更多的數據並改善對電磁脈衝的保護。銅纜佈線的最佳實踐是不要使電纜長度變大，因為會衰減降低數據的容量。</p>
+<p></p>
+<p></p>
 <p><span style="color: #ff99cc;"><span title="Quick scroll up">Twisted Pair Connectors(</span>雙絞線連接器)</span></p>
 <p>Twisted pair cables come with three main types of connectors. The first is the RJ-45 connector, which is an eight-pin connector used in Ethernet networks. Even though most Ethernet networks use only four pins, the RJ-45 provides eight pins for future use and capabilities. The first four pins are used to transmit (two pins) and receive (two pins).</p>
 <p>雙絞線電纜帶有三種主要類型的連接器。第一個是RJ-45連接器，它是以太網網絡中使用的八針連接器。即使大多數以太網僅使用四個引腳，RJ-45仍提供八個引腳以供將來使用。前四個引腳用於發送（兩個引腳）和接收（兩個引腳）。</p>
-</div>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"><span>The RJ-11 connector is used in the standard telephone system. The RJ-11 is a six-pin connector, but commonly only two pins are used for a telephone (transmit and receive). If you have a two-line phone, then four pins are used: two pins to transmit and two pins to receive.</span></div>
-<div class="tw-ta-container hide-focus-ring tw-nfl"></div>
+<p><span>The RJ-11 connector is used in the standard telephone system. The RJ-11 is a six-pin connector, but commonly only two pins are used for a telephone (transmit and receive). If you have a two-line phone, then four pins are used: two pins to transmit and two pins to receive.</span></p>
+<p></p>
 <p class="tw-ta-container hide-focus-ring tw-nfl">RJ-11連接器用於標準電話系統。 RJ-11是一個六針連接器，但電話通常僅使用兩個針腳（用於發送和接收）。如果您有兩線電話，則會使用四個引腳：兩個引腳用於發送，兩個引腳用於接收。</p>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<p></p>
 <p lang="">Finally, the DB-9 connector is used for RS-232 signals. This connector looks like a standard serial connector. It is used commonly for asynchronous serial communications, like connecting to an external modem. In modern networks, you will see this type of connector on a “rollover cable.” A rollover cable has a DB-9 on one side (which is connected to your laptop’s serial port), and an RJ-45 connector on the other side (which is used to connect to Cisco routers and switches to do administration tasks).</p>
 <p lang="">最後，DB-9連接器用於RS-232信號。該連接器看起來像標準的串行連接器。它通常用於異步串行通信，例如連接到外部調製解調器。在現代網絡中，您將在“翻轉電纜”上看到這種類型的連接器。翻轉電纜的一側為DB-9（連接到筆記本電腦的串行端口），另一側為RJ-45連接器（用於連接到Cisco路由器和交換機以執行管理任務）。</p>
 <p id="N1073E" lang="">A straight-through cable is a type of twisted pair cable that is used in local area networks to connect a computer to a network hub, such as a router. This type of cable is also sometimes called a patch cable. Both ends of the cable have an identical pinout, hence the name “straight-through.” A crossover cable switches the pinouts of the two ends of the cable, making the transmit and receive pins alternate on the two ends. This allows two workstations to connect directly to each other without the need for a hub, switch, or router.</p>
@@ -96,7 +96,7 @@
 <h3>PCH 11 Coaxial-Cable(同軸電纜)</h3>
 <p style="text-align: left;"><span style="color: #ff99cc;"><strong>1.learning objectives/學習目標</strong></span></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">Identify types of network cables and connectors.</pre>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">識別網絡電纜和連接器的類型。</div>
+<p>識別網絡電纜和連接器的類型。</p>
 <p lang="" style="text-align: left;">Coaxial cable is a much older media technology. Coaxial cable, also known as coax for short, is composed of two conductors. The inner conductor, which is known as the insulated conductor (center wire), is the copper wire over which data is passed. The outer conductor is the braided metal shield and aids in protecting the inner wire from physical injury and the effects of EMI. Much like the shielding we saw in shielded twisted pair, the outer shield helps keep electromagnetic interference out of the data’s path. Between the inner conductor and the outer shield, we find an insulated core that prevents any data transfer between the inner core and outer shield. The outside of the cable is made of a flexible plastic jacket, much like the twisted pair cabling. Coaxial cabling was included in the first Ethernet standard as 10Base5 (thicknet) and continued to be used throughout updates as 10Base2 (thinnet) as well as being most commonly used in bus and ring networks. UTP cabling however, is easier to work with in a star topology and is significantly less expensive.</p>
 <p lang="" style="text-align: left;"><span style="color: #ff0000;">同軸電纜是一種較老的媒體技術。</span>同軸電纜（也簡稱為同軸電纜）由兩個導體組成。內部導體（稱為絕緣導體（中心線）)是其上傳數據的銅線。外導體是編織的金屬屏蔽層，有助於保護內線免受傷害和電磁干擾的影響。就像我們在屏蔽雙絞線中看到的屏蔽層一樣，外部屏蔽有助於將電磁干擾排除在數據路徑之外。在內部導體和外部屏蔽層之間，我們找到了一個絕緣芯，可防止在內芯和外部屏蔽層之間進行任何數據傳輸。電纜的外部由柔軟的塑膠護套製成，非常類似於雙絞線電纜。同軸電纜已包含在第一個以太網標準中，稱為10Base5（Thicknet），並在整個更新中繼續用作10Base2（Thinnet），並且<span style="color: #ff0000;">在總線和環形網絡中最常用</span>。但是，<span style="color: #ff0000;">非屏蔽雙絞線電纜更容易在星形網中使用，且價格便宜得多。</span></p>
 <p lang="" style="text-align: left;"><span style="color: #ff99cc;">2.Coaxial Cable Types(同軸電纜之類型)</span></p>
@@ -106,38 +106,38 @@
 <p id="N106B5" lang="">While there were three types of cables, there are only two types of common connectors used with coaxial cable. The first is called BNC, from the name Bayonet Neill-Concelman. Sometimes people also call this the British Naval connector, because the BNC was heavily used by the British in their shipboard radio systems. This connector was commonly used in early Ethernet networks and it has a “push and twist” type of connector to secure the cable to the network device.</p>
 <p lang="">雖然有三種類型的電纜，但同軸電纜僅使用兩種類型的普通連接器。第一個稱為BNC，名稱為刺刀Neill-Concelman。有時人們也將其稱為英國海軍連接器，因為英國人在其艦載無線電系統中大量使用了BNC。該連接器通常用於早期的以太網網絡，並且具有“推壓式”連接器，用於將電纜固定至網絡設備。</p>
 <p lang=""><span style="color: #ff99cc;">Coaxial jack.(<span lang="zh-TW">同軸插孔</span>)</span></p>
-<p lang=""><img alt="" height="310" src="/images/image10.png" width="273"/></p><h3>PCH 11 Copper vs  Fiber(銅vs光纖)</h3>
+<p lang=""><img alt="" height="310" src="/images/image10.png" width="273"/></p>
+<h3>PCH 11 Copper vs  Fiber(銅vs光纖)</h3>
 <p><span style="color: #ff99cc;">learning objectives/學習目標</span></p>
 <p>Categorize characteristics of connectors and cabling.</p>
-<div class="contentContain">
-<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">分類連接器和電纜的特性。</span></pre>
-</div>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
-<p id="N10688" lang=""><strong> </strong></p>
-<p lang="">When we compare the advantages and disadvantages of fiber-optic cables and copper (twisted pair) cables, we have to consider that fiber-optic has a higher bandwidth (measured in Gbps or Tbps), it can carry its signal many miles without the need of a repeater, it is immune to the effects of EMI, and it has much better security than traditional twisted pair cables. However, twisted pair cabling does hold some advantages of its own. For one, it is much less expensive than fiber-optic cabling. Also, copper wiring is much easier to install, taking only a few hours to learn. Finally, twisted pair cabling can be created and terminated using inexpensive tools. For example, a complete copper wiring toolset can be bought online for less than $50, while a complete fiber-optic kit may cost $1000 or more. For these reasons, copper has remained the dominant media in most local area networks.</p>
+<p lang=""></p>
+<p id="N10688" lang="">When we compare the advantages and disadvantages of fiber-optic cables and copper (twisted pair) cables, we have to consider that fiber-optic has a higher bandwidth (measured in Gbps or Tbps), it can carry its signal many miles without the need of a repeater, it is immune to the effects of EMI, and it has much better security than traditional twisted pair cables. However, twisted pair cabling does hold some advantages of its own. For one, it is much less expensive than fiber-optic cabling. Also, copper wiring is much easier to install, taking only a few hours to learn. Finally, twisted pair cabling can be created and terminated using inexpensive tools. For example, a complete copper wiring toolset can be bought online for less than $50, while a complete fiber-optic kit may cost $1000 or more. For these reasons, copper has remained the dominant media in most local area networks.</p>
 <p lang="">當我們比較光纖電纜和銅纜（雙絞線）的優缺點時，我們必須考慮到<span style="color: #ff0000;">光纖具有更高的帶寬</span>（以Gbps或Tbps為單位），它<span style="color: #ff0000;">可以將信號傳輸很多英里而無需作為中繼器</span>，它<span style="color: #ff0000;">不受電磁干擾</span>的影響，並且<span style="color: #ff0000;">比傳統的雙絞線電纜具有更好的安全性</span>。但是，<span style="color: #ff0000;">雙絞線電纜確實具有一些優點</span>。首先，它<span style="color: #ff0000;">比光纖電纜便宜得多</span>。而且，<span style="color: #ff0000;">銅線的安裝更容易</span>，只需幾個小時即可完成。最後，可以使用廉價的工具創建和終止雙絞線電纜。例如，一套完整的銅線工具套件可以在線購買，價格不到50美元，而一套完整的光纖套件的價格可能在1000美元以上。由於這些原因，<span style="color: #ff0000;">銅一直是大多數局域網中的主要介質</span>。</p>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
-</div>
-</div>
+<p lang=""></p>
+<br/><br/><br/>PCH 11 Converters(<span lang="zh-TW">轉換器</span>)
+<p><span style="color: #ff99cc;">learning objectives/學習目標</span></p>
+<p><span style="color: #000000;">Categorize characteristics of connectors and cabling.</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">分類連接器和電纜的特性。<br/></span></pre>
+<p id="N10678" lang="">Because of the wide variety of cable and connector types, there is sometimes a need to convert from one type of media to another. For example, if you have to make a connection between two LANs in buildings that are located one mile apart, but your network uses Cat 5e, UTP cabling, how can you make that connection? When you look at your routers, you find they only accept RJ-45 connections, but you know that you cannot run a Cat 5e cable more than 100 meters. How can you solve this problem? With a media converter.</p>
+<p lang="">由於電纜和連接器的類型多種多樣，有時需要從一種介質轉換為另一種介質。例如，如果您必須在相距一英里的建築物中的兩個LAN之間建立連接，但是您的網絡使用Cat 5e，<span>非屏蔽雙絞線</span>電纜，那麼如何建立連接？當您查看路由器時，會發現它們僅接受RJ-45連接，但您知道不能將Cat 5e電纜的長度超過100米。您如何解決這個問題？帶媒體轉換器。</p>
 <p></p>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
-<div class="contentContain" style="text-align: left;"></div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span> </span></span></pre>
-<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" style="text-align: left;" tabindex="0">
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
-</div>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
+<p></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
+<p></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span> </span></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<p></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span> </span></span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
-<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" style="text-align: left;" tabindex="0">
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<p></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span> </span></pre>
-</div>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container" style="text-align: left;"></div>
-<p style="text-align: left;"></p></div></div></div>
+<p></p>
+<p style="text-align: left;"></p>
