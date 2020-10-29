@@ -133,45 +133,23 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">PCH 12 Ethernet Technology(以太網技術) << <a href='PCH 12 Ethernet Technology(以太網技術).html'>Previous</a> <a href='PCH 12 Evolution of Standards(標準的演變).html'>Next</a> >> PCH 12 Evolution of Standards(標準的演變)<br /><h1>PCH 12 Carrier Sense Multiple Access and Collision Detect</h1>
-<p><span style="color: #ff0000;"><strong>(<span lang="zh-TW">載波偵聽多路訪問與衝突檢測</span>)</strong></span></p>
-<p><span style="color: #ff99cc;">learning objectives/學習目標</span></p>
-<p>Recognize the typical network standards.</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">識別典型的網絡標準。</span></pre>
-<p lang=""></p>
-<p lang="">The nature of half-duplex transmission brought about the need for CSMA/CD, which works by allowing all devices to transmit data whenever they wish. The carrier sense portion means that the device “listens” to the network first to find a “break” in the conversation. If the device doesn’t hear other devices transmitting, then it begins its transmission. Multiple access refers to every device having equal access to the network at all times. This is unlike the token ring network in which each device had to wait for the signal (token) before transmitting. Finally, we have collision detection as part of the CSMA/CD control method. If, by chance, two devices both were ready to transmit, they “listened” to the network for a “lull” in the conversation, and both started transmitting at the same time, the devices are able to detect that they both transmitted at the same time and caused a collision.</p>
-<p lang="">半雙工傳輸的性質帶來了對<span style="color: #ff0000;"><strong>CSMA / CD(載波偵測多重存取/碰撞偵測)</strong></span>的需求，它允許所有設備在需要時傳輸數據。運營商感知部分意味著設備首先“監聽”網絡，以在會話中找到“間隔”。如果該設備聽不到其他設備的傳輸，則開始傳輸。多路訪問是指每台設備始終具有對網絡的平等訪問權限。這與令牌環網絡不同，在令牌環網絡中，每個設備都必須在發送之前等待信號（令牌）。最後，我們將碰撞檢測作為<span style="color: #ff0000;"><strong>CSMA / CD(載波偵測多重存取/碰撞偵測)</strong></span>控制方法的一部分。如果偶然地兩個設備都準備好發送，則它們在通話中“監聽”網絡中的“間隔”，並且兩個設備都同時開始發送，則這些設備能夠檢測到它們都在發送時發送。同時又造成了衝突。</p>
-<p id="N1069B" lang="">The image below depicts both the CSMA/CD and CSMA/CA simplified algorithm. The left branch is CSMA/CD used by half-duplex Ethernet and the right branch is CSMA/CA used by 802.11 wireless LAN, which is also half-duplex.</p>
-<p lang="">下圖描述了CSMA / CD(載波偵測多重存取/碰撞偵測)和<strong>CSMA/CA(載波偵測多重存取/碰撞避免）</strong>簡化算法。<span style="color: #ff0000;">左分支是半雙工以太網使用的CSMA / CD<strong>(載波偵測多重存取/碰撞偵測)</strong></span>，<span style="color: #ff0000;">右分支是802.11無線LAN（也是半雙工）使用的CSMA / CA<strong>(載波偵測多重存取/碰撞避免）</strong></span>。</p>
-<p><img alt="" height="406" src="./../images/image1 (1).png" width="417"/></p>
-<p><span>CSMA/CD and CSMA/CA diagram. By </span>Tkz4<span><span> </span>(Own work) [</span>CC BY-SA 3.0<span><span> </span>or<span> </span></span>GFDL<span>], via Wikimedia Commons</span></p>
-<p></p>
-<p lang=""></p>
-<p lang=""></p>
-<p lang="">In the example shown below, four devices are connected in a physical bus topology. Each device has equal access to the network. Here, all the devices are listening, trying to determine if any other device is communicating before beginning transmission.</p>
-<p>在下面顯示的示例中，四個設備以物理總線拓撲連接。每個設備對網絡都有平等的訪問權限。在這裡，所有設備都在監聽，試圖確定是否有其他設備在開始傳輸之前進行通信。<br/><span title="Quick scroll up"></span></p>
-<p></p>
-<p><img alt="" height="352" src="./../images/image2.png" width="505"/></p>
-<p id="N106C1" lang="">Ethernet devices on a shared bus topology. Image used under CC-BY-SA license from<span> </span>Nattydusadee.</p>
-<p></p>
-<p lang=""></p>
-<p id="N106CA" lang="">In the next image below, we see an example of two devices that transmitted at the same time. This simultaneous transmission resulted in a data collision, causing the transmission to be broken.</p>
+    <div id="tipue_search_content">PCH 12 Carrier Sense Multiple Access and Collision Detect << <a href='PCH 12 Carrier Sense Multiple Access and Collision Detect.html'>Previous</a> <br /><h1>PCH 12 Evolution of Standards(標準的演變)</h1>
+<p><span style="color: #ff99cc;">learning objectives/學習目標</span><br/><br/><span>Recognize the typical network standards.</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">識別典型的網絡標準。<br/></span></pre>
+<p id="N10690" lang="">Finally, we need to discuss the various standards we use in Ethernet in terms of bandwidth and distance limitations.</p>
 <div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">在下一張圖片中，我們看到了兩個同時傳輸的設備的示例。這種同時傳輸導致數據衝突，會導致傳輸中斷。<br/><br/><br/><img alt="" height="365" src="./../images/image3.png" width="524"/><br/></span></pre>
-</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">最後，我們需要討論帶寬和距離限制方面在以太網中使用的各種標準。<br/><br/></span></pre>
+<p id="N10693" lang="">The Ethernet standard also determines the type of cable, its bandwidth, and its distance limitation. It is important to know these standards, especially those that relate to a category 3, 5, 5e, and 6 cabling standard.</p>
+<p lang="">以太網標準還確定電纜的類型，帶寬和距離限制。重要的是要知道這些標準，尤其是與3、5、5e和6類佈線標準有關的標準。</p>
+<p lang=""><img alt="" height="494" src="./../images/1.png" width="878"/></p>
 <div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
-<p id="N106D2" lang="">Collision on an Ethernet segment. Image used under CC-BY-SA license from<span> </span>Nattydusadee.</p>
-<p id="N106D2" lang=""></p>
+<p id="N1072E" lang="">When discussing data flow and speed, the two terms referred to are bandwidth and throughput. Often used interchangeably, the two terms are different and need to be understood. Simply put, bandwidth is the theoretical maximum of the given standard, whereas throughput is the actual potential in a real-world scenario. Many factors affect actual throughput, such as half-duplex vs. full-duplex, cable length, and quality. Both bandwidth and throughput are measured in bits per second (bps) with the prefix K (kilobit), M (megabit), or G (gigabit). Each Ethernet category (cat) cable supports a different Ethernet standard and thereby determines the bandwidth capacity or maximum throughput. The table below shows the bandwidth according to Ethernet type.</p>
+<p lang=""><span style="color: #ff0000;">在討論數據流和速度時，所指的兩個術語是帶寬和吞吐量</span>。<span style="color: #ff0000;">這兩個術語通常可以互換使用</span>，它們是不同的，這是需要去理解的。簡而言之，<span style="color: #ff0000;">帶寬是給定標準的理論最大值，而吞吐量是實際情況下的實際數值</span>。<span style="color: #ff0000;">許多因素會影響實際吞吐量，例如半雙工與全雙工，電纜長度和質量。</span>帶寬和吞吐量均以每秒比特數（bps）以及前綴K（千bit），M（兆bit）或G（千兆bit）來衡量。每條以太網類別電纜均支持不同的以太網標準，從而確定帶寬容量或最大吞吐量。下表顯示了根據以太網類型的帶寬。</p>
 <p lang=""></p>
 </div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
-<p id="N106DB" lang="">When a collision is detected, both devices choose a backoff time at random, and then attempt to retransmit again. In the diagram below, the computers choose to wait 200 milliseconds and 300 milliseconds, respectively. When that time is up, they will attempt to sense if another machine is already transmitting. If there is nothing detected, the first machine will transmit its message. Once completed, the second machine will then transmit its message, after its 300 millisecond wait time.</p>
-<p lang="">當檢測到衝突時，兩個設備都會隨機選擇一個退避時間，然後嘗試重新傳輸。在下圖中，計算機分別選擇等待200毫秒和300毫秒。時間到時，他們將嘗試檢測另一台機器是否已經在傳輸。如果未檢測到任何內容，則第一台機器將發送訊號。完成後，第二台機器將在等待300毫秒後發送其訊號。</p>
-<p lang=""></p>
-<p lang=""></p>
-<p lang=""><img alt="" height="386" src="./../images/image4.png" width="555"/></p>
-<p id="N106E3" lang="">Recovering from a collision with random backup timers. Image used under CC-BY-SA license from<span> </span>Nattydusadee.</p>
-<br />PCH 12 Ethernet Technology(以太網技術) << <a href='PCH 12 Ethernet Technology(以太網技術).html'>Previous</a> <a href='PCH 12 Evolution of Standards(標準的演變).html'>Next</a> >> PCH 12 Evolution of Standards(標準的演變)</div>
+</div>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"><img alt="" height="217" src="./../images/2.png" width="492"/></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl"></div><br />PCH 12 Carrier Sense Multiple Access and Collision Detect << <a href='PCH 12 Carrier Sense Multiple Access and Collision Detect.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
