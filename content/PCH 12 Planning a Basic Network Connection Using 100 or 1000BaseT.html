@@ -133,24 +133,75 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">PCH 12 Ethernet Standards(以太網標準) << <a href='PCH 12 Ethernet Standards(以太網標準).html'>Previous</a> <a href='PCH 12 Carrier Sense Multiple Access and Collision Detect.html'>Next</a> >> PCH 12 Carrier Sense Multiple Access and Collision Detect<br /><h1>PCH 12 Ethernet Technology(以太網技術)</h1>
-<p lang=""><span style="color: #ff99cc;">learning objectives/學習目標</span></p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">Recognize the typical network standards.<br/><br/>識別典型的網絡標準。</span></pre>
-<p></p>
-<p>Before Ethernet was the dominant technology, there were multiple types of networking technologies competing for market share. At one point, Ethernet was just one of many competing standards, including token ring, fiber distributed data interface (FDDI), and more. By the late 1990s, a single standard was clearly the dominant choice in both office and residential networks: IEEE 802.3 Ethernet. Ethernet uses various media types, from coaxial cable to twisted-pair copper and fiber-optic cables (discussed in an earlier module). The 802.3 Ethernet standard and the concept of using frames for communication over various media, including Wireless 802.11, is predominant today, and it is vital to understand the fundamentals of Ethernet including the various speed and distance limitations each standard places on our networks.</p>
-<p lang="">在<span style="color: #ff0000;">以太網成為主導技術之前，存在多種類型的網絡技術爭奪市場份額</span>。一方面，以太網只是眾多競爭標準之一，包括令牌環，光纖分佈式數據接口（FDDI）等。到<span style="color: #ff0000;">1990年代後期，單一標準顯然已成為辦公室和住宅網絡中的主要選擇</span>：IEEE 802.3以太網。<span style="color: #ff0000;">以太網使用各種介質類型，從同軸電纜到雙絞銅纜和光纖電纜</span>（在較早的模塊中討論）。 802.3以太網標準和使用幀在包括無線802.11在內的各種媒體上進行通信的概念如今非常盛行，了解以太網的基本知識（包括每個標準對我們網絡的各種速度和距離限制）至關重要。</p>
-<p lang="">The original 802.3 Ethernet standard sent data over coaxial cables at a half-duplex transmission rate which means devices can only transmit (TX) or Receive (RX) alternately at separate intervals because the data used the same path for both. This is analagous to communicating using a walkie-talkie rather than a telephone.</p>
-<p lang=""><span style="color: #ff0000;">最初的802.3以太網標準以半雙工傳輸速率通過同軸電纜發送數據</span>，這<span style="color: #ff0000;">意味著設備只能以單獨的間隔交替（TX）或接收（RX）</span>，因為這兩個數據使用相同的路徑。這類似於使用對講機而不是電話進行通話。</p>
-<p lang="">This coaxial cable design became known as Thicknet and later Thinnet due to the size of the cables and was mostly used in bus and ring network topologies.</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">由於電纜的尺寸，這種同軸電纜設計被稱為Thinnet，後來被稱為Thinnet，並且主要用於總線和環形網絡拓撲中。<br/><br/></span></pre>
-<p id="N10699" lang="">Thicknet, the original IEEE 802.3 standard designated as 10Base5, provided a maximum bandwidth of 10Mbps and was limited in distance to 500 meters. Thinnet, or IEEE 10Base2, used a smaller type of coaxial and also provided a maximum bandwidth of 10 Mbps, but was limited to 185 meters. Eventually the industry transitioned from coaxial cabling to unshielded twisted-pair cabling.</p>
-<p lang="">最初被指定為10Base5的IEEE 802.3標準Thicknet提供的最大帶寬為10Mbps，並且距離限制為500米。 Thinnet或IEEE 10Base2使用較小類型的同軸電纜，並且提供的最大帶寬為10 Mbps，但限制為185米。最終，該產業從同軸電纜過渡到非屏蔽雙絞線電纜。</p>
-<p lang="">Twisted pair cabling, dubbed 10BaseT, provided the same 10 Mbps half-duplex maximum bandwidth with a category 3 cable, but the distance was limited to 100 meters due to the lack of the extra shield that coaxial provided. In spite of the increased attenuation (loss of signal strength over distance), network designers moved to twisted pair cabling because of ease of installation and overall lower cost. Coaxial cable fell out of favor and the 802.3 Ethernet standard continues to evolve with faster data rates over twisted pair cabling categories.</p>
-<p lang="">雙絞線電纜（稱為10BaseT）與第3類電纜可提供相同的10 Mbps半雙工最大帶寬，但由於缺少同軸電纜提供的額外屏蔽，因此距離限制為100米。儘管衰減增加了（信號強度隨距離損失），但由於易於安裝和總體成本較低，網絡設計人員仍選擇雙絞線佈線。同軸電纜不受歡迎，並且802.3以太網標準繼續發展，而雙絞線電纜類別的數據速率更快。</p>
-<p id="N1069F" lang="">The design question that Ethernet had to answer was how a device should access the network. The nature of half-duplex transmission (TX or RX) over a single wire pair meant that collisions were imminent. Should the access be deterministic and orderly, or contention-based and chaotic? The older ring-based networks, such as token ring, were developed upon the premise that order was necessary: each machine would wait for its turn to transmit its data until it received the electronic token that was passed around the ring. This is similar to the “talking stick” or “speaker’s staff” used by Native Americans and other aboriginal tribes where the staff (token) gave the person access to speak and the remaining group members listened. Ethernet, on the other hand, is premised upon a contention-based model. This is more chaotic and allows any device on the network to transmit anytime it wishes. The problem with this type of philosophy is figuring out how to prevent two devices from transmitting at the same time and causing a collision of the data. With Ethernet, the answer came in the form of a media access control method called carrier sense multiple access/collision detect (CSMA/CD).</p>
-<p lang="">以太網必須回答的設計問題是設備如何訪問網絡。單線對上半雙工傳輸（TX或RX）的性質意味著即將發生衝突。訪問應該是確定性和有序的，還是基於競爭且混亂的？較早的基於環的網絡（例如令牌環）是在必須有順序的前提下開發的;每台機器都將等待其輪流發送其數據，直到接收到圍繞環傳遞的電子令牌為止。這類似於美洲原住民和其他原住民部落使用的“說話棒”或“發言人的工作人員”，其中工作人員（令牌）使該人員可以發言，其餘的小組成員則可以收聽。另一方面，以太網以基於競爭的模型為前提。這更加混亂，並允許網絡上的任何設備在其希望的任何時間進行傳輸。這種類型原理存在的問題是，要弄清楚如何防止兩個設備同時傳輸並導致數據衝突。對於以太網，答案是以一種稱為載波偵聽多路訪問/衝突檢測（CSMA / CD）的媒體訪問控制方法。</p>
-<p><br/><br/><br/></p>
-<br />PCH 12 Ethernet Standards(以太網標準) << <a href='PCH 12 Ethernet Standards(以太網標準).html'>Previous</a> <a href='PCH 12 Carrier Sense Multiple Access and Collision Detect.html'>Next</a> >> PCH 12 Carrier Sense Multiple Access and Collision Detect</div>
+    <div id="tipue_search_content">PCH 12 Evolution of Standards(標準的演變) << <a href='PCH 12 Evolution of Standards(標準的演變).html'>Previous</a> <br /><h1>PCH 12 Planning a Basic Network Connection Using 100 or 1000BaseT</h1>
+<p class="tw-ta-container hide-focus-ring tw-nfl"><span style="color: #ff0000;"><strong>(<span lang="zh-TW">使用100 / 1000BaseT規劃基本網絡連接)</span></strong></span></p>
+<p class="tw-ta-container hide-focus-ring tw-nfl"><span style="color: #ff99cc;">learning objectives/學習目標</span></p>
+<p class="tw-ta-container hide-focus-ring tw-nfl">Plan a basic network connection using 100BaseT.</p>
+<div class="tw-ta-container hide-focus-ring tw-nfl">
+<div class="contentContain">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">使用100BaseT規劃基本的網絡連接。<br/></span></pre>
+<p lang=""></p>
+<p id="N10688" lang="">Now that you have a general understanding of networking hardware, application of standards for LANs (local area networks) and WANs (wide area networks), and the limitations of the media used, you should be able to plan adding a network node to an already existing network. For example, you could add a new computer to your company’s wired LAN. In such situations, the majority of the hardware installation is plug and play (PnP), but you still have to know that the hardware and media chosen are correct, configure software settings for network access, and verify the new hardware will function properly to allow user access to all network resources.</p>
+<p lang="">既然您已經對網絡硬件，LAN（局域網）和WAN（廣域網）的標準的應用以及所用媒體的限制有了一般的了解，那麼你應該能夠計劃將網絡節點添加到已經現有網絡。例如，你可以將新計算機添加到公司的有線局域網中。在這種情況下，大多數硬件安裝都是即插即用（PnP），但你仍然必須知道所選的硬件和媒體是正確的，配置用於網絡訪問的軟件設置，並驗證新硬件是否正常運行以允許用戶訪問所有網絡資源。</p>
+<p lang="">Current technology in most small office/home office (SOHO) environments will have auto-sensing networking hardware. There are older switches and routers that still remain in some networks that do not have the ability to run at 100/1000BaseT, so check your network documentation!</p>
+<p lang="">大多數小型辦公室/家庭辦公室（SOHO）環境中的當前技術都將具有自動感應網絡硬件。在某些網絡中仍然存在一些較舊的交換機和路由器，這些交換機和路由器仍無法在100 / 1000BaseT上運行，因此請查看你的網絡文檔！</p>
+<p lang=""><strong><span style="color: #ff99cc;" title="Quick scroll up">Media/媒體</span></strong></p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
+<div class="section" id="N1068E">
+<div class="sectionContain">
+<p id="N10695" lang="">Installing a wired connection onto the network means knowing if the NIC (network interface card) of the device can also auto-negotiate throughput based on the cable media used. Again, new or current technology should be auto-sensing and auto-negotiating (speed, duplex mode and other network parameters). The most important decision for the technician is selecting the correct type of Ethernet cable to connect the device. Recall that the cable standards will restrict distance as well as throughput. A cat 5 cable was standard for 100BaseT but will limit throughput to 100 Mbps so you must use cat 5e or cat 6 if you are trying to achieve 1000BaseT (1 Gbps).</p>
+<p lang="">在網絡上安裝有線連接意味著要知道設備的NIC（網絡接口卡）是否還可以根據所使用的電纜介質自動協商吞吐量。同樣，新技術或當前技術應該是自動感應和自動協商（速度，雙工模式和其他網絡參數）。對於技術人員而言，最重要的決定是選擇正確的以太網電纜類型來連接設備。回想一下，電纜標準將限制距離以及吞吐量。<span style="color: #ff0000;"> Cat 5電纜是100BaseT的標準配置，但會將吞吐量限制為100 Mbps，因此，如果要實現1000BaseT（1 Gbps），則必須使用Cat 5e或Cat 6。</span></p>
+</div>
+</div>
+<div class="section" id="N1069A">
+<div class="sectionContain">
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
+<p><strong><span style="color: #ff99cc;" title="Quick scroll up">Distance/距離</span></strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p id="N106A1" lang="">Most current SOHO environments will have Ethernet wall jacks internally connecting to the next network device, be it a switch or a hub. But, if there is not a connection already present, you must remember that all copper-based Ethernet cable is limited to 100 meters. Do not run the wire in an area where the cabling can cause a safety hazard, become damaged due to environmental conditions, or suffer from electromagnetic interference (EMI).</p>
+<p lang="">當前大多數SOHO環境將在內部將以太網牆壁插孔連接到下一個網絡設備，無論是交換機還是集線器。但是，<span style="color: #ff0000;">如果尚不存在連接，則必須記住所有基於銅纜的以太網電纜限制為100米</span>。<span style="color: #ff0000;">請勿在可能會導致安全隱患、因環境條件而損壞電纜或遭受電磁干擾（EMI）的區域中佈線。</span></p>
+<p lang=""><span style="color: #ff99cc;"><strong><span title="Quick scroll up">Verify Connectivity/</span>驗證連接性</strong></span></p>
+<p id="N106AD" lang="">After the machine is connected and powered on (assuming Windows 7 or later), watch the system tray after boot-up to see if there is a wired network icon. The standard Windows 7 icons are:</p>
+<p lang="">連接機器並打開電源後（假設使用Windows 7或更高版本），啟動後請查看系統托盤，以查看是否有有線網絡圖標。 Windows 7的標準圖標是：</p>
+<div class="tw-ta-container hide-focus-ring tw-nfl">
+<div class="contentContain">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<div class="section" id="N1069A">
+<div class="sectionContain">
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
+<div class="section" id="N106A6">
+<div class="sectionContain">
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"><img alt="" height="140" src="./../images/image7.png" width="531"/></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl">
+<p id="N106B7" lang="">Wired network icons. Images used under CC-BY license from Russell Burchill.</p>
+<p id="N106B7" lang=""></p>
+<p lang=""></p>
+<div class="section" id="N106A6">
+<div class="sectionContain">
+<p id="N106BB" lang="">Access the “network sharing center” to select the type of network access you need to have and add any devices required for the node (e.g., a printer). Verify access by opening the browser or using a command line tool to verify connectivity and addressing.</p>
+<p lang="">訪問“<span style="color: #ff0000;">網絡共享中心</span>”以選擇所需的網絡訪問類型，並添加該節點所需的任何設備（例如打印機）。通過打開瀏覽器或使用命令行工具來驗證訪問權限，以驗證連接性和地址。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW" style="color: #000000;"><br/><br/></span></pre>
+</div><br />PCH 12 Evolution of Standards(標準的演變) << <a href='PCH 12 Evolution of Standards(標準的演變).html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
