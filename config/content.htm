@@ -583,9 +583,49 @@ print(compare(PlayerA_says, PlayerB_says))
 <p>Many people have written libraries in Python that do not come with the standard distribution of Python (like the<span> </span><code class="highlighter-rouge">random</code><span> </span>library mentioned<span> </span><a href="https://www.practicepython.org/exercise/2014/04/02/09-guessing-game-one.html">in a previous post</a>). These libraries can do anything from machine learning to date and time formatting to meme generation. If you have a task you need done, most likely someone has written a library for it.</p>
 <p><span lang="zh-TW">許多人都使用Python編寫了一些資料庫，這些<span>資料</span>庫不是Python的標準發行版所附帶的（例如前一篇文章中提到的隨機庫）。這些<strong><span>資料</span></strong>庫可以執行從機器學習到日期和時間格式化到模因生成的所有操作。如果你有需要完成的任務，很可能會有人為它編寫了一個<span>資料</span>庫。</span></p>
 <p>There are three main things to keep in mind when using a library:</p>
-<ol>
-<li>You need to install it. Installation in GNU/Linux based systems will generally be easier than on Windows or OSX, but there will always be documentation for how to do it.</li>
-<li>You need to import it. At the top of your program, make sure you write the line<span> </span><code class="highlighter-rouge">import requests</code>, or whatever the name of your library is. Then you can use it to your heart’s content.</li>
-<li>You need to read documentation. Someone else wrote it, so the rules might not be so obvious. Anyone (or any group) that writes a Python package writes documentation for it. Eventually, reading documentation will become second nature.</li>
-</ol>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span style="color: #000000; background-color: #ff99cc;"><strong> </strong></span></pre>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">使用資料庫時，要牢記三件事:<br/></span>1.You need to install it. Installation in GNU/Linux based systems will generally be easier than on Windows or OSX, but there will always be documentation for how to do it.</p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">你會需要安裝它。在基於GNU / Linux的系統上的安裝通常比在Windows或OSX上更容易，但是會有關於如何執行的文檔。</p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">2.You need to import it. At the top of your program, make sure you write the line<span> </span><code class="highlighter-rouge">import requests</code>, or whatever the name of your library is. Then you can use it to your heart’s content.</p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">你需要導入它。在程序的頂部，請確保您編寫了一行導入請求，或是輸入你的資料庫名稱。然後，你可以使用它來滿足您的需求。</span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">3.You need to read documentation. Someone else wrote it, so the rules might not be so obvious. Anyone (or any group) that writes a Python package writes documentation for it. Eventually, reading documentation will become second nature.</p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">你需要閱讀<span lang="zh-TW">文件資料</span>。其他人也會編輯，所以規則可能不會那麼明顯。編寫Python程序包的任何人(或任何小組)都會為其編寫文檔。最終，閱讀文檔將<span>習慣成自然</span>。</p>
+<p><strong><span style="color: #000000; background-color: #ff99cc;">Requests</span></strong></p>
+<p>One of the most useful libraries written for Python recently,<span> </span><a href="http://docs.python-requests.org/en/latest/">requests</a><span> </span>does “HTTP for humans.” What this means in laymen’s terms is that it asks the internet things from Python. When you type “<a class="vglnk" href="http://facebook.com/" rel="nofollow"><span>facebook</span><span>.</span><span>com</span></a>” into the browser, you are asking the internet to show you Facebook’s homepage.</p>
+<p><span lang="zh-TW">最近Python編寫的最有用的資料庫之一為，請求執行“人類HTTP”。用外行的話來說，這意味著它將向Python詢問互聯網問題。在瀏覽器中輸入“ facebook.com”時，你是在要求互聯網顯示Facebook主頁。</span></p>
+<p>In the same way, a program can ask the internet something. It might not be “show me Facebook”, but you can for example ask Github for a list of all the repositories that the user “mprat” has. You can do this with an <span style="background-color: #ff99cc;">API (Application Programming Interface)</span>. This exercise doesn’t use APIs, so we’ll talk more about those in a later post.</p>
+<p>同樣，程序可以向互聯網詢問一些信息。它可能不是“向我顯示Facebook”，但是你可以做個測試來要求Github提供用戶“ mprat”擁有的所有存儲庫的列表。你可以使用API（應用程序編程接口）來執行此操作。本練習不使用<span style="background-color: #ff99cc;">應用程式介面</span>，因此我們將在以後的文章中進一步討論。</p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">Back to showing the user a webpage. When I type “<a class="vglnk" href="http://facebook.com/" rel="nofollow"><span>facebook</span><span>.</span><span>com</span></a>” into the browser, Facebook sends my browser a bunch of HTML (basically, code for how the website looks). The browser then takes this HTML and shows it to me in a pretty way. (Fun fact: to see the HTML of any page in a browser, right click on the page and “Inspect Element” or “View Source” depending on your browser. In Chrome, “Inspect Element” will pop up a module at the bottom of your page where you can see the HTML from the page. This trick will come in handy when you’re doing the exercise. If you need to DO anything with this HTML, better to use a program. More posts about this coming later.) If I want to “see” a webpage with a program, all I need to do is ask it for it’s HTML and read it</div>
+<div class="tw-ta-container hide-focus-ring tw-nfl"></div>
+<div class="tw-ta-container hide-focus-ring tw-nfl">返回向用戶顯示網頁。當我在瀏覽器中鍵入“ facebook.com”時，Facebook向我的瀏覽器發送了一堆HTML（基本上是網站外觀的代碼）。然後瀏覽器將這個HTML並以漂亮的方式顯示給我。 （一個有趣的事實：要在瀏覽器中查看任何頁面的HTML，請右鍵單擊該頁面，然後根據你的瀏覽器單擊“檢查元素”或“查看源代碼”。在Chrome中，“檢查元素”將在底部彈出一個模塊頁面的頂部，您可以在其中查看頁面的HTML。在進行練習時，此技巧會派上用場。如果您需要使用此HTML做任何事情，最好使用一個程序。 ）如果我想“查看”帶有程序的網頁，我所要做的就是向其索要HTML並閱讀它</div>
+<p>The ‘requests’ library does half of that job: it asks (requests, if you will) a server for information. This could be just data (through an API - more later) or in the case of this exercise, HTML.</p>
+<p><span lang="zh-TW">“請求”資料庫完成了一半工作：它向服務器請求（如果需要的話）信息。這可能只是數據（通過API-稍後介紹），或者在本練習中為HTML。</span></p>
+<p>Look at the<span> </span><a href="http://docs.python-requests.org/en/latest/">documentation</a><span> </span>for all the details you need. In this particular latest version, all you need to do to ask a website for it’s HTML is:</p>
+<p>查看文件檔以獲取所需的所有詳細信息。在此特定的最新版本中，向網站詢問其HTML所需要做的就是：</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import requests
+  url = 'http://github.com'
+  r = requests.get(url)
+  r_html = r.text</pre>
+<p>Now inside the variable<span> </span><code class="highlighter-rouge">r_html</code>, you have the HTML of the page as a string. Reading (otherwise called<span> </span>parsing) happens with a different Python package.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">現在，在變量r_html中，你必須將頁面的HTML作為字符串。讀取（其他中說法為解析）發生在其他Python資料包中。<br/><br/></span></pre>
+<p><span style="background-color: #ff99cc;"><strong>BeautifulSoup</strong></span></p>
+<p>To solve our problem of parsing (reading, understanding, interpreting) the string of HTML we got from<span> </span><code class="highlighter-rouge">requests</code>, we use the<span> </span><a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/"><code class="highlighter-rouge">BeautifulSoup</code></a><span> </span>library.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">為了解決解析（閱讀，理解，</span>解釋過程<span lang="zh-TW">）從請求中獲得的HTML字符串的問題，我們使用BeautifulSoup資料庫。</span></pre>
+<p>What it does is give a<span> </span><em>hierarchical</em><span> </span>(a pyramid structure) to the HTML in the document. If you don’t know anything about HTML, the<span> </span><a href="http://en.wikipedia.org/wiki/HTML">Wikipedia</a><span> </span>article is a good summary. For the purposes of this exercise, you don’t need to know anything about HTML beyond being able to look at it quickly.</p>
+<p>它的作用是為文檔中的HTML提供階級式結構（金字塔結構）。如果你對HTML一無所知，請參閱Wikipedia文章。在本練習中，除了能夠快速查看HTML外，你不需要了解其他任何有關HTML的知識。</p>
+<p>Because<span> </span><code class="highlighter-rouge">BeautifulSoup</code><span> </span>takes care of interpreting our HTML for us, we can ask it things like: “give me all the lines with<span> </span><code class="highlighter-rouge">&lt;p&gt;</code><span> </span>tags” or “find me the parent element to the<span> </span><code class="highlighter-rouge">&lt;title&gt;</code><span> </span>element”, etc.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">因為BeautifulSoup會負責為我們解釋HTML，所以我們可以提出類似的要求："給我所有帶有&lt;p&gt;標籤的行列"或"為母元素找到&lt;title&gt;元素"，等等。
+</span></pre>
+<p>Your code would look something like this:</p>
+<p>你寫出的編碼將會像這樣:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from bs4 import BeautifulSoup
+
+  # some requests code here for getting r_html 
+
+  soup = BeautifulSoup(r_html)
+  title = soup.find('span', 'articletitle').string</pre>
+<p>And you can do many more things in<span> </span><code class="highlighter-rouge">BeautifulSoup</code>, but I will leave you to explore those by yourself or through other later exercises.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">你也可以在BeautifulSoup中做更多的事情，但是我將會讓你自己或通過其他後續練習來探索這些內容。</span></pre>
+<p><strong>Happy coding!</strong></p>
+<p><b>練習加油!!</b></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<p></p>
