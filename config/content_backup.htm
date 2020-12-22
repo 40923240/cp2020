@@ -2,7 +2,7 @@
 <p><img alt="" height="266" src="/images/coding.jpg" width="507"/></p>
 <p>This class is <strong>"</strong><em><span style="color: #ff6600;">Introduction of Computer Science</span></em><strong>"</strong></p>
 <p><em><strong><span style="color: #ff6600;">I'm K</span></strong></em></p>
-<p><em><strong><span style="color: #ff6600;">welcome to my webside</span></strong></em></p>
+<p><em><strong><span style="color: #ff6600;">welcome to my webside.</span></strong></em></p>
 <p><em><strong><span style="color: #ff6600;"> </span></strong></em></p>
 <p><span style="background-color: #000000; color: #ff6600;">Github</span>:<a href="https://github.com/40923240/cp2020">https://github.com/40923240/cp2020</a></p>
 <p><span style="color: #ff6600; background-color: #000000;">Gitlab</span>:<a href="https://gitlab.com/40923240/cp2020">https://gitlab.com/40923240/cp2020</a></p>
@@ -406,10 +406,47 @@
 </div>
 <p>2-1</p>
 <h1>HW3</h1>
-<h2>7.List Comprehensions</h2>
+<h2>7.List Comprehensions(理解串列)</h2>
+<p><strong>Exercise 7 (練習7)</strong></p>
+<p>Let’s say I give you a list saved in a variable:<span> </span><code class="highlighter-rouge">a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code>. Write one line of Python that takes this list<span> </span><code class="highlighter-rouge">a</code><span> </span>and makes a new list that has only the even elements of this list in it.</p>
+<p><span style="color: #ff6600;">假設我提供給你了一個保存在變量中的列表：a = [1、4、9、16、25、36、49、64、81、100]。編寫一行Python程式，使用此列表a並創建一個僅包含該列表偶數元素的新列表。</span></p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<p><strong>Discussion(討論)</strong></p>
+<p>Concepts for this week:</p>
+<p>本周將應用的概念:</p>
+<ul>
+<li><span style="color: #ff6600;">List comprehensions(理解串列)</span></li>
+</ul>
+<p><span style="color: #000000; background-color: #ff99cc;"><strong>List comprehensions(理解串列)</strong></span></p>
+<p>The idea of a<span> </span><em>list comprehension</em><span> </span>is to make code more compact to accomplish tasks involving lists. Take for example this code:</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">理解串列的意思是使代碼更緊湊，以完成涉及列表的任務。以下面的代碼為例：<br/></span></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">years_of_birth = [1990, 1991, 1990, 1990, 1992, 1991]
+  ages = []
+  for year in years_of_birth: 
+    ages.append(2014 - year)
+</pre>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><br/>And at the end, the variable ages has the list [24, 23, 24, 24, 22, 23]. What this code did was translate the years of birth into ages, and it took us a for loop and an append statement to a new list to do that.</span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">最後，變量年齡具有列表[24、23、24、24、22、23]。這段代碼所做的就是將出生的歲月轉換成年齡，然後我們使用了for循環，並在新列表中添加了一個append語句來完成此操作。</span></p>
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">比較這段代碼：<br/><br/></span></pre>
+</div>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">years_of_birth = [1990, 1991, 1990, 1990, 1992, 1991]
+  ages = [2014 - year for year in years_of_birth]</pre>
+<p></p>
+<p class="tw-ta-container hide-focus-ring tw-nfl">The second line here - the line with ages is a list comprehension.</p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">這裡的第二行,帶年齡的行列是理解串列。<br/></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">It accomplishes the same thing as the first code sample - at the end, the ages variable has a list containing [24, 23, 24, 24, 22, 23], the ages corresponding to all the birthdates.</p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">它完成了與第一個代碼示例相同的操作...最後，ages變量具有一個包含[24、23、24、24、22、23]的列表，這些年齡對應於所有的生日。</p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span>The idea of the list comprehension is to condense the for loop and the list appending into one simple line. Notice that the for loop just shifted to the end of the list comprehension, and the part before the </span><code class="highlighter-rouge">for</code><span><span> </span>keyword is the thing to append to the end of the new list.</span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">列表理解的想法是壓縮for循環，並將列表追加到一條簡單的行中。注意，for循環剛剛移到列表理解的末尾，而for的關鍵字之前的部分是要附加到新列表末尾的。</p>
+<p>You can also embed<span> </span><code class="highlighter-rouge">if</code><span> </span>statements into the list comprehension - check out<span> </span><a href="https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions">this reference</a><span> </span>to help you out. There are many examples and a better explanation than I can ever give.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">你也可以將if語句嵌入列表推導中-請查閱此參考資料以幫助你。有許多例子能比我提供出更好的解釋。<br/></span></pre>
+<p><strong>Happy coding!</strong></p>
+<p><strong>練習加油!!</strong></p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
 <h2>8.Rock paper sciorrs(剪刀石頭布)</h2>
 <p>Make a two-player Rock-Paper-Scissors game. (<em>Hint: Ask for player plays (using<span> </span><code class="highlighter-rouge">input</code>), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game</em>)</p>
-<p><span style="background-color: #ffcc00;">請做出有兩個玩家的猜拳遊戲,(提示:要求可以與玩家互動(使用input),並比較它們,列印出恭喜勝利者的訊息,然後詢問玩家是否想要開始新的遊戲)。</span></p>
+<p><span style="color: #ff6600;">請做出有兩個玩家的猜拳遊戲,(提示:要求可以與玩家互動(<span style="background-color: #000000;">使用input</span>),並比較它們,列印出恭喜勝利者的訊息,然後詢問玩家是否想要開始新的遊戲)。</span></p>
 <p>Remember the rules:</p>
 <p><span>編碼的規則:</span></p>
 <p>1.Rock beats scissors</p>
@@ -422,9 +459,9 @@
 <p>Discussion(<span>討論</span>)</p>
 <p>Concepts for this week:</p>
 <p><span>這周會用到的概念有:</span></p>
-<p><span style="background-color: #ffcc00;">1.While loops</span></p>
-<p><span style="background-color: #ffcc00;">2.Infinite loops</span></p>
-<p><span style="background-color: #ffcc00;">3.Break statements(拆解陳述)</span></p>
+<p><span style="color: #ff6600;">1.While loops</span></p>
+<p><span style="color: #ff6600;">2.Infinite loops</span></p>
+<p><span style="color: #ff6600;">3.Break statements(拆解陳述)</span></p>
 <p></p>
 <p><span style="background-color: #ff99cc; color: #000000;"><strong>While loops</strong></span></p>
 <p>We have already discussed<span> </span><code class="highlighter-rouge">for</code><span> </span>loops, or loops that look sequentially (one by one) at elements in a list. There is a second type of loop that works in a slightly different way called a<span> </span><code class="highlighter-rouge">while</code><span> </span>loop.</p>
@@ -498,13 +535,8 @@
 </div>
 <strong>Happy coding!</strong>
 <p><strong>編碼加油!!</strong></p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span style="background-color: #ff6600;"><strong>個人答題結果:</strong></span></pre>
 </div>
-<p> </p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sys
 
 PlayerA = input("pleace enter your name:")
@@ -536,6 +568,5 @@ def compare(PlayerA, PlayerB):
         
 print(compare(PlayerA_says, PlayerB_says))
 </pre>
-<p><br/><br/></p>
-<p>NO.17 Anwser</p>
 <p></p>
+<h2>17.Decode a web page(解碼網站)</h2>
