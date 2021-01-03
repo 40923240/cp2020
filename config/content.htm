@@ -407,8 +407,21 @@
 </div>
 <div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"><img alt="" height="335" src="/images/1.png" width="595"/></div>
 </div>
-<p>2-1</p>
-<h1>HW3</h1>
+<h2>2-1</h2>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0762"
+cp1a = []
+for line in urllib.request.urlopen(target_url):
+    cp1a.append(int(line.decode('utf-8').rstrip()))
+from random import shuffle
+shuffle(cp1a)
+step = 12
+cp1aGroup = []
+m = int(len(cp1a)/step)
+for i in range(0,len(cp1a),step):
+    cp1aGroup.append(cp1a[i:i+step])
+print(cp1aGroup)</pre>
+<p></p><h1>HW3</h1>
 <h2>7.List Comprehensions(理解串列)</h2>
 <p><strong>Exercise 7 (練習7)</strong></p>
 <p>Let’s say I give you a list saved in a variable:<span> </span><code class="highlighter-rouge">a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code>. Write one line of Python that takes this list<span> </span><code class="highlighter-rouge">a</code><span> </span>and makes a new list that has only the even elements of this list in it.</p>
